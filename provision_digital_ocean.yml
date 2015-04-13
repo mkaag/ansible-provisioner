@@ -7,4 +7,4 @@
     - vars/droplets.yml
 
   tasks:
-    - include: tasks/create_droplet.yml droplets={{droplets}}
+    - include: tasks/create_droplet.yml mydroplets={{droplets}}

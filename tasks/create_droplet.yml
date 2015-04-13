@@ -11,7 +11,7 @@
       wait_timeout=500
       unique_name=true
   register: droplet
-  with_items: droplets
+  with_items: mydroplets
 
 - debug: msg="IP is {{ item.droplet.ip_address }}"
   with_items: droplet.results
